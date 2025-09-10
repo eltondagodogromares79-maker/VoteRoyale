@@ -380,11 +380,11 @@ const VotingPage = () => {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 w-full gap-8 justify-self-center align-self-center">
           <div>
             <Card className="border-yellow-200">
               <CardHeader>
-                <CardTitle className="text-black">Female Contestants ({displayedParticipants.filter((p) => p.gender.toLowerCase() === "female").length})</CardTitle>
+                <CardTitle className="text-black">All Candidates({displayedParticipants.filter((p) => p.gender.toLowerCase() === "female").length})</CardTitle>
               </CardHeader>
               <CardContent>
                 {displayedParticipants
@@ -433,7 +433,7 @@ const VotingPage = () => {
             </Card>
           </div>
 
-          <div>
+{/*           <div>
             <Card className="border-yellow-200">
               <CardHeader>
                 <CardTitle className="text-black">Male Contestants ({displayedParticipants.filter((p) => p.gender.toLowerCase() === "male").length})</CardTitle>
@@ -483,7 +483,7 @@ const VotingPage = () => {
                   ))}
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-8 text-center">
